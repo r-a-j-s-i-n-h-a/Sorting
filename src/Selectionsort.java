@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Selectionsort {
     void sort2(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length-1; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[i]) {
+                if (arr[j] < arr[min]) {
                     min = j;
                 }
 
